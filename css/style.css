@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.khung{
+	height:550px;
+	width:550px;
+	border: 1px solid #EF5255;
+	position: relative
+}
+.hinh{
+	height:100px;
+	width:100px;
+	background:#F1B2B3;
+	animation: chuyendong;
+	animation-delay: 0s;
+	animation-duration: 12s;
+	animation-iteration-count: 2;
+	animation-timing-function: ease-in-out;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+@keyframes chuyendong{
+	0%{top:0px;left:0px;transform:rotate(360deg) scale(0.5);background: #EF5255;}
+	25%{top:0px;left:450px;transform:rotate(0deg) scale(1);background: aquamarine;}
+	50%{top:450px;left:450px;transform:rotate(0deg) scale(0);background:purple}
+	75%{top:450px;left:0px;transform:rotate(360deg) scale(1);background: violet;}
+	100%{top:0px;left:0px;transform:rotate(0deg) scale(0);background:yellowgreen}
+}

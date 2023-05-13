@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+p,h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+	
+}
+ul,ol{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 1320px;
+	margin:0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap
+}
+.col-1{
+	width: 8.33%;
+}
+.col-2{
+	width: 16.67%;
+}
+.col-3{
+	width: 25%;
+}
+[class*="col-"]{
+	padding: 0 12px;
+}
+.w-100{
+	width:100%;
+}
